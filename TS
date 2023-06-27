@@ -1,0 +1,65 @@
+T Student Testing Overview Notes
+A little bit about me
+-	I have been in the bank for three years, I currently live in Kent but my hub location is London, so I commute into the London offices a couple of times a week. Some of my hobbies include paddleboarding and swimming. 
+-	Before I worked at Lloyds I was studying Economics with Econometrics at the University of Kent in Canterbury.
+-	When I graduated, like a lot of students I didn’t know what I wanted to do or where I wanted to work, so I applied for many roles. From Quality Assurance, to cyber security, to risk analysis. And I was lucky enough to get an entry level position in QA, which at the time was called MCP QA and has now become Channels Enabling Platform or CEP. 
+-	When I joined QA I was complete new to QE and didn’t have any coding or engineering experience and was put on a quality engineering ADP, which was a 6-month programme that taught me the fundamentals of quality assurance, a little like what I am going to talk about today.
+-	I learnt the fundamentals and was put onto various programmes and roles within the team and from there onwards I have built up my knowledge base. 
+-	After about a year in the team from trying different projects, I was given the opportunity to work in the automation team, where I found my passion. I have since been building up my knowledge specifically in automation testing and now have a small team of about 5/6 automation testers which I lead, on various programmes. 
+-	I have also added the last two pictures on there which may appear a little random and unrelated. But I also wanted to highlight that there are so many opportunities within LBG. For example we are allocated volunteering hours, where we can go into the community, for example I have done D2MAD with the woodland trust. I have also recently joined a programme called Elevate, which is a specifcally female talent programme, designed to accelerate career progression in data and tech roles. I have also been in coding cohorts, sustainability cohorts, modern engineering cohorts, so there are lots of opportunities outside of the day job to get involved with. 
+Quality Engineering Overview
+What is quality Assurance?
+Software systems are an integral part of our daily life, we use them constantly on our phones, tv’s, computers. And most people have had experience with software that did not work as expected. Software that does not work correctly can lead to many problems, sometimes a slow running application just causes frustration but sometimes it can include loss of money, time or business reputation, and, in extreme cases, even injury or death. The main example for the bank is FPS, the payment software we use on our online banking. If online banking was to go down, people may not be able to make important payments, impacting their credit score or withdraw money to buy food etc. 
+Software testing assesses software quality and helps reducing the risk of software failure in operation. Software testing is a set of activities to ensure that software works correctly. This can include making sure it works functionally as designed, to finding defects, to making sure that the outcome of the testing is documented. This is particularly important within a bank as we are subject to the Financial Conduct Authority and other regulators. 
+So testing is just one part of what is called the Software Development Life Cycle. This is the process that is followed when someone has an idea of a piece of software or application, all the way through to it being delivered to the end user. So you can see there are 6 parts to this. 
+QA Video
+Functional Testing
+Functional testing evaluates the functions that a component or system should perform. The functions are “what” the test object should do. The main objective of functional testing is checking the functional completeness, correctness and appropriateness.
+So basically, functional testing checks that the software does what you are expecting it to do. So when you design a banking application and you want to be able to make a payment, set up a standing order and pay in a check, you need to write functional test cases to ensure that the user can do each one of those functionalities. 
+Functional testing is then broken down into different test levels.
+•	Unit testing focuses on the code and is usually done by the developers.
+•	System Testing: focuses on the overall behaviour and capabilities of an entire system. So the banking application itself
+•	System integration testing focuses on testing the interfaces of the system under test and other systems and external services it is connected to. So if every month the banking application produces a report, you would check the connection with the reporting system. Or if the banking application needs to look up the interest rates in an external database, you would test it could connect to that too. 
+TO Programme
+The technology optimisation programme is all about reducing the LBG data centres. So a Datacentre is simply a large building that LBG own that is used to host a load of computers or servers. The data centres host all types of apps, from ones that are just used internally within the bank, to things such as the faster payments system which is used every time you go onto your mobile banking application. So when LBG use datacentres they have a vast amount of storage and they have to pay for all the running costs, security cost, maintenance etc. so they are pretty pricey. 
+So LBG want to move the majority of their application to the cloud.
+The cloud is simply a datacentre hosted off premise by a third party. It provides on-demand availability of computer system resources, especially data storage and computing power, without the additional costs and maintenance. 
+So it would be lovely if we could just drag and drop the applications from one server to another but the applications need to go through rigorous testing. So this is where QA come in. 
+Audit compliance: One of the deliverables we have to create is a test strategy. So the next two slides give you an insight into this. 
+TO Test Strategy
+TO Workflow
+Functional Testing Example
+Functional Testing Exercise
+Break
+Quality Engineering Overview
+Non-functional Testing
+Non-functional testing evaluates attributes other than functional characteristics of a component or system. Non-functional testing is the testing of “how well the system behaves”. 
+Therefore functional testing checks the software is doing the right things but non functional testing checks that it is being done in the right way.
+•	Performance efficiency: Ability to adjust to changes in demands
+•	Compatibility: Operates correctly on different computers or operating systems
+•	Usability: Refers to the design of the software to make it user friendly
+•	Reliability: the probability to fulfils its requirements
+•	Security: which we will go into in more detail
+•	Maintainability : correct faults over time, improve performance or other attributes
+•	Portability: Same software in different environments. 
+Before NFT is commence an NFT Risk Assessment is carried out. 
+NFT Risk Assessment check list
+Non-functional Testing Video
+TO
+This is another slide from the TO programme test strategy, which outlines the approach taken for NFT.
+•	NFRs: Non functional requirements set out by the programme and the business. These could be things such as how quickly applications will load and process, what level of traffic they can handle or what level of security risk will be accepted. 
+•	NFT Risk Assessment is carried out in order to determine if the application has any NFR’s or would require NFT. Changes to systems can vary widely in scope and scale, from simple screen changes to a new implementation of a customer facing web site. The testing required for each of these will be very different. In order to determine what tests are needed, then a risk based approach should be adopted. A small, low risk change may not need any testing, where a customer facing, critical system may require lots of tests.
+•	If NFT is required this will be updated in the test plan, which will need to be signed off by stakeholders. Then the test cases are created and executed. Just like manual functional test cases, these will be monitored and managed for defects and recorded in an EoTR
+Security Testing
+It is essential that Lloyds systems are secure and customer data is safe. There are lots of individuals, organisations and countries who may like to harm Lloyds through activities such as hacking, stealing data, denial of service attacks or defacing web sites.
+
+Application security testing is done to ensure all common and code or technology specific vulnerabilities are identified and remediated which could otherwise be used to try and compromise the banks security. 
+Security Testing exposes security vulnerabilities that could make an application susceptible to cyber attacks. The main type of application security testing are:
+SCA (Software Composition Analysis) - this will generate an inventory report of all open source components in your products, including all direct and transitive dependencies.  Basic information includes the open source license and any known security vulnerabilities.  All open source libraries / components should be scanned before integrating with the application.
+SAST (Static Application Security Test) - used to analyse application code or binaries for coding and design conditions that may be indicative of security vulnerabilities. This is executed on static code and is “White-Box” testing. SAST should be performed during development. As code is created it should be scanned for known vulnerabilities.
+DAST (Dynamic Application Security Test) - used to identify security vulnerabilities such as SQL injection by attacking the application at runtime. This is “Black-Box” testing which takes place while the application is running and tries to penetrate the application in a variety of ways to identify vulnerabilities, including those outside the code and in third-party interfaces. DAST is performed once an application is complete and functionally stable.
+IAST (Interactive Application Security Testing) - used to monitor the application at runtime for security vulnerabilities whilst the application behaviour is being exercised.  This can be done by executing functional tests as the application is being developed and functional regression tests for the entire application. IAST is performed in parallel to functional and functional regression testing of the application. Penetration testing is usually performed immediately prior to go live. Regular checks are also performed on production systems.
+Penetration Test – uses external ‘ethical hackers’ to try and expose vulnerabilities by simulating Cyber attacks.  This testing is performed by authorised 3rd party organisations.
+TO Security Testing Decision Tree
+NEFT & Security Example
+NFT & Security Exercise
